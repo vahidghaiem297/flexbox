@@ -156,7 +156,9 @@ color: #fff;
   width:100px;
   border-radius: 50%;
   display: block;
+  height: 100px;
   margin: auto;
+  object-fit: cover;
 }
 .contact h3{
   text-align: center;

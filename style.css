@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "BNazanin";
+  src: url("fonts/BNazanin.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body,
+html {
+  font-family: "BNazanin";
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+.logo {
+  color: orange;
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+#navbar ul li a {
+  padding: 0.75rem;
+  font-size: 1.17rem;
+}
+#navbar ul li a:hover {
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+}
+#navbar a {
+  color: white;
+}
+/* Navbar End */
+/* Header */
+
+.header {
+  background: url("img/pexels-tobias-bjørkli-2113566.jpg") no-repeat center
+    center / cover;
+  height: 100vh;
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  padding: 2rem;
+}
+.head-btn {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  padding:0.50rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  transition: 0.3s ease;
+}
+.head-btn:hover{
+    background-color: white;
+    color: orange;
+}
+.main-title {
+  color: white;
+  font-size: 3rem;
+}
+.header-container p{
+    margin: 1.5rem 0;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+/* Header End*/
+/* Sections */
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+#section1 .items{
+  display: flex;
+ 
+}
+#section1 .items .item{
+  flex:1;
+  text-align: center;
+
+}
+#section1 .items .item i{
+  font-size: 40px;
+  background-color: orange;
+  padding: 1.25rem;
+  border-radius: 50%;
+}
+
+#section1 h3{
+  text-align: center;
+}
+.bg-dark{
+  background-color: #333;
+}
+.section-container{
+  display: flex;
+ 
+}
+#section2 .img{
+background: url('img/pexels-jaime-reimer-2662116.jpg')no-repeat center center/ cover;
+
+}
+.section-container > div{
+  flex: 1;
+}
+.right-section{
+text-align: right;
+color: #fff;
+
+}
+
+.right-section h3,p,.list{
+  margin: 2rem;
+}
+.right-section .list li{
+  padding: 0.50rem;
+  border-bottom: 1px solid #eee;
+
+}
+/* Sections End */
+/* Contact */
+
+.contact .items{
+  display: flex;
+}
+.contact .items div{
+  flex: 1;
+}
+.contact .items div img{
+  width:100px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+.contact h3{
+  text-align: center;
+
+}
+.bg-light{
+  background-color: #eee;
+}
+.py-2{
+  padding: 2rem 0;
+}
+.contact2 h3{
+  text-align: right;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 70%;
+  margin: auto;
+}
+.form input{
+  padding: 0.4rem;
+  margin: 0.75rem 0;
+}
+.send-btn{
+  background-color: orange;
+  padding: 0.3rem 0.4rem;
+  color: #fff;
+   display: block;
+  margin:1rem 0 1rem auto;
+  text-align: center;
+  width: 20%;
+}
+.send-btn:hover{
+  background-color: orangered;
+}
+
+/* Contact End */
+/* Footer */
+.foot-container{
+  display: flex;
+  color: white;
+}
+.foot-container div{
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot-container p{
+  font-size: 1rem;
+}
+footer ul{
+  display: flex;
+  align-items: center;
+}
+footer ul li{
+padding: 12px 14px;
+font-size: 1.5rem;
+}
+footer ul li i{
+  color: white !important;
+}
+/* Footer End */
+@media(max-width:500px){
+  .section-container{
+    flex-direction: column;
+   
+  }
+  .section-container div{
+    flex-basis: 50vh;
+  }
+  #navbar{
+    flex-direction: column;
+  }
+  #navbar h1{
+    text-align: center;
+  }
+  #navbar ul{
+    display: block;
+    text-align: center;
+  }
+  #navbar ul li a {
+    padding: 1rem 0;
+    display: block;
+
+  }
+  #section1 .items{
+    display: block;
+  }
+  #section1 .items .item{
+    display: flex;
+   margin:2rem 0;
+    flex-direction: row-reverse;
+  }
+  #section1 .items .item div{
+    align-self: center;
+  }
+  #section1 .items .item i{
+    align-self: center;
+    
+    
+  }
+  #section1 .items .item div p{
+    margin: 0;
+  }
+.container{
+  padding: 0;
+}
+
+}
+@media (min-width:501px) and (max-width:768px){
+  #section1 .items .item{
+    display: flex;
+   margin:0 1rem;
+    flex-direction: row-reverse;
+  }
+  #section1 .items .item div{
+    align-self: center;
+  }
+  #section1 .items .item i{
+    align-self: center;
+    
+    
+  }
+  #section1 .items .item div p{
+    margin: 0;
+  }
+.container{
+  padding: 0;
+}
+}
